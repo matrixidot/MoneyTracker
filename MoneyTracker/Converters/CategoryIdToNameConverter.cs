@@ -16,5 +16,5 @@ public sealed class CategoryIdToNameConverter : IMultiValueConverter
         return categories.FirstOrDefault(c => c.Id == categoryId)?.Name ?? "";
     }
 
-    public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture) { }
+    public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture) => throw new NotImplementedException();
 }
